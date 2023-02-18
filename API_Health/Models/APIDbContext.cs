@@ -10,5 +10,7 @@ namespace API_Health.Models
         }
 
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Provider> Providers { get; set; }
+        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
     }
 }

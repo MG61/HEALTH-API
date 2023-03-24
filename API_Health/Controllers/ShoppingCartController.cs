@@ -24,7 +24,7 @@ namespace API_Health.Controllers
         }
 
         // GET: api/ShoppingCart/5
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "Get")]
         public ShoppingCart Get(int id)
         {
             return _CRUDContext.ShoppingCarts.SingleOrDefault(x => x.ID_cart == id);
